@@ -54,7 +54,6 @@ public class AK_35_SumOfDiagonal {
         int arr[][] = AK_34_PracticeSet.input2DArray();
         long sum1 = diagonalSum(arr);
         System.out.println("Sum of diagonal elements is " + sum1);
-        System.out.println();
 
     }
 }
