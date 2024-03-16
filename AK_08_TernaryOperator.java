@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AK_08_TernaryOperator {
+class TernaryOperator {
     public static void main(String[] args) {
         System.out.println("Ternary Operator");
         Scanner input = new Scanner(System.in);
@@ -17,6 +17,16 @@ public class AK_08_TernaryOperator {
 
         int greaterNumber = a>b ? a : b;
         System.out.println(greaterNumber+" is greater number");
+
+        System.out.println(" -- Welcome to minimum number finder -- ");
+        TernaryOperator ternary = new TernaryOperator();
+        int min = ternary.min(a,b);
+        System.out.println("Minimum number is: " + min);
+
+    }
+
+    public int min(int num1, int num2) {
+        return num1 < num2 ? num1:num2;
 
     }
 }
