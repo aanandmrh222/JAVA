@@ -1,42 +1,46 @@
 import java.util.Scanner;
-
 public class AK_09_SwitchCase {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter your first number: ");
-        int first = input.nextInt();
-        System.out.print("Enter your second number: ");
-        int second = input.nextInt();
-        System.out.println("Choose an operator: +, -, *, or /");
-        char operator = input.next().charAt(0);
-        int result;
 
-        switch (operator) {
-
-            case '+':
-                result = first+second;
-                System.out.println("The sum of first and second number is: "+result);
+        System.out.print("Enter a day in number: ");
+        int day = input.nextInt();
+        switch(day) {
+            case 1:
+                System.out.println("Monday");
                 break;
-            case '-':
-                result = first-second;
-                System.out.println("The differenc of first and second number is: "+result);
+            case 2: System.out.println("Tuesday"); break;
+            case 3: System.out.println("Wednesday");
                 break;
-            case '*':
-                result = first*second;
-                System.out.println("The multiplication of first and second number is: "+result);
+            case 4: System.out.println("Thursday");
                 break;
-            case '/':
-                if(second==0) {
-                    System.out.println("Zero divison is not allowed");
-                }
-                else {
-                    result = first / second;
-                    System.out.println("The divison of first and second number is: " + result);
-                }
+            case 5: System.out.println("Friday");
                 break;
-            default:
-                System.out.println("Invalid Operator");
+            case 6:  // Fall through
+//                System.out.println("Saturday");
+//                break;
+            case 7: System.out.println("Holiday");
+                break;
+            default: System.out.println("Invalid Day..");
         }
+
+
+        System.out.print("Enter a day in number: ");
+        int day1 = input.nextInt();
+        String output = switch (day1) {
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            case 3 -> "Wednesday";
+            case 4 -> "Thursday";
+            case 5 -> "Friday";
+//            case 6 -> "Saturday";
+//            case 7 -> "Sunday";
+            case 6, 7 -> "Holiday";
+            default -> "Invalid!!";
+        };
+        System.out.println(output);
+
+
 
 
     }
