@@ -44,5 +44,15 @@ public class AK_17_MbPracticeSet1 {
                 System.out.println("Please Guess Lower");
             }
         } while (result!=0);
+
+        System.out.println("\n-- Words concatenate using StringBuilder --");
+        String[] arr = new String[] {
+                "My","Name","is","Aanand", "Kumar"
+        };
+        StringBuilder sb = new StringBuilder();
+        for(String str1 : arr) {
+            sb.append(str1).append(" ");
+        }
+        System.out.println(sb);
     }
 }
