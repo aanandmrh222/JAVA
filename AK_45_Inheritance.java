@@ -7,7 +7,7 @@
 
     Types of Inheritance :-
     1. Single Level Inheritance :-  [Base Class] ---> [Derived Class]
-    2. Multi Level Inheritance  :-  [Base Class] ---> [Derived Class] ---> [Derived Class]
+    2. Multi Level Inheritance  :-  [Base Class] ---> [Derived Class1] ---> [Derived Class2]
     3. Hierarchical Inheritance :-  Hierarchical inheritance is defined as the process of deriving more than one class from a base class.
             [Base Class]
                 / \
@@ -15,6 +15,8 @@
  [Derived Class]   [Derived Class]
 
     4. Hybrid Inheritance  ;-  Hybrid inheritance is a combination of simple, multiple inheritance and hierarchical inheritance.
+
+    Multiple Inheritance are not allowed in java, but allow in c++
 
  */
 

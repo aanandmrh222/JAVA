@@ -20,9 +20,9 @@ class Student1 {
         System.out.println(this.name);
         System.out.println(this.age);
     }
-    public void printInfo(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public void printInfo(String name1, int age1) {
+        this.name = name1;
+        this.age = age1;
 
     }
 }

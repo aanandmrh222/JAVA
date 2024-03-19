@@ -29,3 +29,14 @@ public class Car {
     }
 
 }
+
+
+/*
+
+public :-- The code is accessible for all classes.
+default :-- The class is only accessible by classes in the same package. This is used when you don't specify a modifier.
+private :-- The code is only accessible within the declared(or same) class. But in Inheritance we use getter setter method to access the all private(parent class) things in child class.
+protected :-- The code is accessible in the same package and subclasses. this is used in Inheritance.
+
+ */
+
