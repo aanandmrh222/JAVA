@@ -7,10 +7,15 @@ The abstract keyword is a non-access modifier, used for classes and methods:
     Abstract method: Defines methods without implementations, requiring subclasses to provide specific functionality.
  */
 
-abstract class Vehicle1 {
+abstract class Vehicle1 implements Transport {
     private int noOfTires;
 
     public abstract void makeStartSound();
+
+    @Override
+    public void getSetGo() {
+        System.out.println("This is from Transport");
+    }
 
     public Vehicle1(int noOfTires) {
         this.noOfTires = noOfTires;
@@ -39,6 +44,12 @@ class Car2 extends Vehicle1{
     public void makeStartSound() {
         System.out.println("Car start");
     }
+
+//    @Override
+//    public void getSetGo() {
+//        System.out.println("This is from Transport");
+//    }
+
 }
 
 public class AK_57_Abstraction {
