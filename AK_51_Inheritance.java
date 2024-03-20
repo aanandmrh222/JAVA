@@ -8,7 +8,7 @@ protected :-- The code is accessible in the same package and subclasses. this is
  */
 
 class Vehicle {
-//    public int numberOfTires;
+    //    public int numberOfTires;
 //    private int numberOfTires;
     protected int numberOfTires;
 
