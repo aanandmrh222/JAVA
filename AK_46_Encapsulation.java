@@ -1,4 +1,4 @@
-public class AK_47_Encapsulation {
+public class AK_46_Encapsulation {
     public static void main(String[] args) {
 
     }
