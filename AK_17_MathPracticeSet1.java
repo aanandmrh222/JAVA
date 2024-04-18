@@ -1,12 +1,12 @@
 import java.util.Scanner;
-public class AK_17_MbPracticeSet1 {
+public class AK_17_MathPracticeSet1 {
     int roll() {
         double random = Math.random() * 6;
         return (int) Math.ceil(random);
     }
 
     int ran;
-    AK_17_MbPracticeSet1() {
+    AK_17_MathPracticeSet1() {
         ran = (int) Math.ceil(Math.random() * 100);
     }
 
@@ -22,14 +22,14 @@ public class AK_17_MbPracticeSet1 {
     }
     public static void main(String[] args) {
         System.out.println(" -- Random number generator -- ");
-        AK_17_MbPracticeSet1 dice = new AK_17_MbPracticeSet1();
+        AK_17_MathPracticeSet1 dice = new AK_17_MathPracticeSet1();
         for(int i=0; i<10; i++) {
             System.out.print(dice.roll() + " ");
         }
 
         System.out.println("\n -- Guessing Game between 1 to 100 -- ");
         Scanner input = new Scanner(System.in);
-        AK_17_MbPracticeSet1 game = new AK_17_MbPracticeSet1();
+        AK_17_MathPracticeSet1 game = new AK_17_MathPracticeSet1();
         int num;
         int result;
         do {
@@ -45,14 +45,6 @@ public class AK_17_MbPracticeSet1 {
             }
         } while (result!=0);
 
-        System.out.println("\n-- Words concatenate using StringBuilder --");
-        String[] arr = new String[] {
-                "My","Name","is","Aanand", "Kumar"
-        };
-        StringBuilder sb = new StringBuilder();
-        for(String str1 : arr) {
-            sb.append(str1).append(" ");
-        }
-        System.out.println(sb);
+
     }
 }

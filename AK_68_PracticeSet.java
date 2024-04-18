@@ -1,7 +1,8 @@
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+//import java.io.FileNotFoundException;
+//import java.io.FileReader;
+//import java.io.IOException;
 import java.util.Scanner;
+import java.io.*;
 
 public class AK_68_PracticeSet {
     public static void main(String[] args) {
