@@ -1,3 +1,10 @@
+/*
+1. An ordered collection (also known as a sequence).
+2. Allows duplicate elements.
+3. Elements can be accessed by their integer index.
+4. Maintains the insertion order of elements
+ */
+
 import java.util.ArrayList;
 
 public class AK_71_ListInterface {
@@ -31,6 +38,13 @@ public class AK_71_ListInterface {
             System.out.println("Kumar not present in list");
         }
 
+        System.out.println("--");
+        for(String str : strList) {
+            System.out.println(str);
+        }
+
+        System.out.println("--");
+        AK_71_UtilityClass.print(strList);
 
     }
 }
