@@ -1,3 +1,20 @@
+/*
+ <-- States of Thread -->
+1. New: Thread is created but not started.
+2. Runnable: Thread is ready or running.
+3. Running: Thread is actively executing tasks.
+4. Blocked/Waiting: Thread is alive but not active because
+    it's waiting for resources or other threads.
+5. Terminated: Thread has finished or stopped running.
+
+                      [Waiting]
+                        /     ^
+                       /       \
+                      *         \
+   [New] --> [Runnable] <----> [Running] --> [Terminated]
+                        yield()
+ */
+
 package Multithreding.ak02runnable;
 
 public class AK_02_TestingRunnables {

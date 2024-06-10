@@ -1,4 +1,3 @@
-package Multithreding.ak01threadclass;
 /*
 1. Tasks might be very important
 2. Tasks are independent of each other
@@ -7,6 +6,7 @@ package Multithreding.ak01threadclass;
 5. Making your code responsive
  */
 
+package Multithreding;
 public class AK_01_NeedOfMultiThreading {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
